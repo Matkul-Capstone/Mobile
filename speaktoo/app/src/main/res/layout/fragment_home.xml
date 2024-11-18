@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/text_welcome_home"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:text="@string/title_home_welcome"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/image_container"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_username_home"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:text="Andana!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/image_container"
+        app:layout_constraintTop_toBottomOf="@id/text_welcome_home" />
+
+    <RelativeLayout
+        android:id="@+id/user_level_container"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/image_container"
+        app:layout_constraintTop_toBottomOf="@id/text_username_home">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/title_home_level"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_user_level"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Beginner"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:textColor="#219D57"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/image_container"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:padding="5dp"
+        android:background="@drawable/background_circle"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/forgot_password_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/background_profile_pic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_level_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_rounded"
+        android:padding="21dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_container"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_language_level"/>
+
+        <GridView
+            android:id="@+id/grid_levels"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:numColumns="2" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

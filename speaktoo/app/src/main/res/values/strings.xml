@@ -1,0 +1,67 @@
+<resources>
+    <!--general-->
+    <string name="app_name">speaktoo</string>
+    <string name="username_hint">Username</string>
+    <string name="email_hint">Enter your email address</string>
+    <string name="password_hint">Enter your current password</string>
+    <string name="confirm_password_hint">Re-enter password</string>
+    <string name="forgot_password_hint">We will send you an email to set or reset your new password</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_confirm_password">Confirm Password</string>
+    <string name="action_log_in">Log In</string>
+    <string name="action_register">Sign Up</string>
+    <string name="action_submit">Submit</string>
+    <string name="action_to_log_in">Go to login</string>
+
+    <!--levels-->
+    <string name="text_level_beginner">Beginner</string>
+    <string name="text_level_intermediate">Intermediate</string>
+    <string name="text_level_advance">Advance</string>
+
+    <!--main page-->
+    <string name="main_title">SPEAKTOO</string>
+    <string name="main_desc">Your English Pronunciation Partner</string>
+
+    <!--login page-->
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login_title_text">Welcome to Speaktoo</string>
+    <string name="login_desc_text">Login to access your account</string>
+
+    <!--register page-->
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="register_failed">"Register Failed"</string>
+    <string name="register_title_text">Create an account</string>
+    <string name="register_desc_text">Create a new account</string>
+
+    <!--forgot pass page-->
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+    <string name="forgot_password_title_text">Forgot Password ?</string>
+
+    <!--reset password page-->
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="reset_password_title_text">New Password</string>
+
+    <!--password successful-->
+    <string name="password_successful_title_text">Reset Successful !</string>
+    <string name="password_successful_desc_text">Please login to Speaktoo again with your new password</string>
+    <string name="title_activity_nav">NavActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!--bottom_navbar-->
+    <string name="title_nav_home">Home</string>
+    <string name="title_nav_profile">Profile</string>
+    <string name="title_nav_milestone">Milestone</string>
+
+    <!--home fragment-->
+    <string name="title_home_welcome">Welcome,</string>
+    <string name="title_home_level">Level</string>
+    <string name="text_language_level">Language Level</string>
+</resources>
