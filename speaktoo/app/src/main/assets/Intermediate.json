@@ -1,0 +1,98 @@
+[
+  {
+    "sentence_id": 17,
+    "sentence_type": "Intermediate",
+    "chapter": "Describing Daily Routines",
+    "sentence": "I wake up at seven in the morning every day"
+  },
+  {
+    "sentence_id": 18,
+    "sentence_type": "Intermediate",
+    "chapter": "Describing Daily Routines",
+    "sentence": "I go to the gym in the morning"
+  },
+  {
+    "sentence_id": 19,
+    "sentence_type": "Intermediate",
+    "chapter": "Describing Daily Routines",
+    "sentence": "I usually have lunch at half-past twelve in the afternoon"
+  },
+  {
+    "sentence_id": 20,
+    "sentence_type": "Intermediate",
+    "chapter": "Describing Daily Routines",
+    "sentence": "In the evening, I relax and watch TV"
+  },
+  {
+    "sentence_id": 21,
+    "sentence_type": "Intermediate",
+    "chapter": "Expressing Likes and Dislikes",
+    "sentence": "I really like listening to music"
+  },
+  {
+    "sentence_id": 22,
+    "sentence_type": "Intermediate",
+    "chapter": "Expressing Likes and Dislikes",
+    "sentence": "She loves playing tennis"
+  },
+  {
+    "sentence_id": 23,
+    "sentence_type": "Intermediate",
+    "chapter": "Expressing Likes and Dislikes",
+    "sentence": "He hates watching horror movies"
+  },
+  {
+    "sentence_id": 24,
+    "sentence_type": "Intermediate",
+    "chapter": "Expressing Likes and Dislikes",
+    "sentence": "I do not like eating vegetables"
+  },
+  {
+    "sentence_id": 25,
+    "sentence_type": "Intermediate",
+    "chapter": "Asking for and Giving Directions",
+    "sentence": "Go straight and turn left at the traffic light"
+  },
+  {
+    "sentence_id": 26,
+    "sentence_type": "Intermediate",
+    "chapter": "Asking for and Giving Directions",
+    "sentence": "Is this the way to the park"
+  },
+  {
+    "sentence_id": 27,
+    "sentence_type": "Intermediate",
+    "chapter": "Asking for and Giving Directions",
+    "sentence": "Yes, just follow this road and it is on your right"
+  },
+  {
+    "sentence_id": 28,
+    "sentence_type": "Intermediate",
+    "chapter": "Asking for and Giving Directions",
+    "sentence": "How do I get to the station"
+  },
+  {
+    "sentence_id": 29,
+    "sentence_type": "Intermediate",
+    "chapter": "Talking about Past Experiences",
+    "sentence": "I have never been to Japan"
+  },
+  {
+    "sentence_id": 30,
+    "sentence_type": "Intermediate",
+    "chapter": "Talking about Past Experiences",
+    "sentence": "When I was a child, I used to play outside every day"
+  },
+  {
+    "sentence_id": 31,
+    "sentence_type": "Intermediate",
+    "chapter": "Talking about Past Experiences",
+    "sentence": "Last week, I tried a new restaurant for the first time"
+  },
+  {
+    "sentence_id": 32,
+    "sentence_type": "Intermediate",
+    "chapter": "Talking about Past Experiences",
+    "sentence": "I visited Paris last summer"
+  }
+]

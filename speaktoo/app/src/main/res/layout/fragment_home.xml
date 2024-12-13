@@ -8,7 +8,8 @@
     android:layout_marginBottom="@dimen/activity_vertical_margin"
     android:layout_marginStart="@dimen/activity_horizontal_margin"
     android:layout_marginEnd="@dimen/activity_horizontal_margin"
-    tools:context=".ui.home.HomeFragment">
+    android:background="#E3EFE2"
+    tools:context=".ui.fragments.home.HomeFragment">
 
     <TextView
         android:id="@+id/text_welcome_home"
@@ -18,19 +19,19 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/image_container"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text_username_home"/>
 
     <TextView
         android:id="@+id/text_username_home"
         android:layout_width="215dp"
         android:layout_height="wrap_content"
-        android:text="Andana!"
+        android:text="Name!"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/image_container"
-        app:layout_constraintTop_toBottomOf="@id/text_welcome_home" />
+        app:layout_constraintTop_toBottomOf="@id/text_welcome_home"
+        app:layout_constraintBottom_toTopOf="@id/user_level_container"/>
 
     <RelativeLayout
         android:id="@+id/user_level_container"
@@ -38,7 +39,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/image_container"
         app:layout_constraintTop_toBottomOf="@id/text_username_home">
 
         <TextView
@@ -58,6 +58,18 @@
             android:textSize="15sp"
             android:textColor="#219D57"/>
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_continue_learning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/action_continue_learning"
+        android:textSize="13sp"
+        android:textColor="@drawable/text_dark_color"
+        android:backgroundTint="#EE6F57"
+        app:layout_constraintTop_toBottomOf="@id/user_level_container"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
         android:id="@+id/image_container"
@@ -81,12 +93,13 @@
         android:id="@+id/item_level_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:background="@drawable/background_rounded"
         android:padding="21dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/image_container"
+        app:layout_constraintTop_toBottomOf="@id/button_continue_learning"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <TextView
@@ -98,8 +111,20 @@
             android:id="@+id/grid_levels"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
+            android:horizontalSpacing="15dp"
+            android:verticalSpacing="15dp"
             android:numColumns="2" />
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

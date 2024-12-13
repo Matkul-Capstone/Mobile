@@ -1,0 +1,98 @@
+[
+  {
+    "sentence_id": 1,
+    "sentence_type": "Beginner",
+    "chapter": "Basic Greetings and Introductions",
+    "sentence": "Hello. My name is.."
+  },
+  {
+    "sentence_id": 2,
+    "sentence_type": "Beginner",
+    "chapter": "Basic Greetings and Introductions",
+    "sentence": "Nice to meet you"
+  },
+  {
+    "sentence_id": 3,
+    "sentence_type": "Beginner",
+    "chapter": "Basic Greetings and Introductions",
+    "sentence": "How are you?"
+  },
+  {
+    "sentence_id": 4,
+    "sentence_type": "Beginner",
+    "chapter": "Basic Greetings and Introductions",
+    "sentence": "Long time no see"
+  },
+  {
+    "sentence_id": 5,
+    "sentence_type": "Beginner",
+    "chapter": "Everyday Objects and Simple Phrases",
+    "sentence": "This is a chair"
+  },
+  {
+    "sentence_id": 6,
+    "sentence_type": "Beginner",
+    "chapter": "Everyday Objects and Simple Phrases",
+    "sentence": "I need a pen"
+  },
+  {
+    "sentence_id": 7,
+    "sentence_type": "Beginner",
+    "chapter": "Everyday Objects and Simple Phrases",
+    "sentence": "Where is the book?"
+  },
+  {
+    "sentence_id": 8,
+    "sentence_type": "Beginner",
+    "chapter": "Everyday Objects and Simple Phrases",
+    "sentence": "Thank you"
+  },
+  {
+    "sentence_id": 9,
+    "sentence_type": "Beginner",
+    "chapter": "Numbers and Time",
+    "sentence": "What time is it?"
+  },
+  {
+    "sentence_id": 10,
+    "sentence_type": "Beginner",
+    "chapter": "Numbers and Time",
+    "sentence": "There are sixty seconds in a minute"
+  },
+  {
+    "sentence_id": 11,
+    "sentence_type": "Beginner",
+    "chapter": "Numbers and Time",
+    "sentence": "There are twenty-four hours in a day"
+  },
+  {
+    "sentence_id": 12,
+    "sentence_type": "Beginner",
+    "chapter": "Numbers and Time",
+    "sentence": "It is five o'clock"
+  },
+  {
+    "sentence_id": 13,
+    "sentence_type": "Beginner",
+    "chapter": "Simple Questions and Responses",
+    "sentence": "How are you?"
+  },
+  {
+    "sentence_id": 14,
+    "sentence_type": "Beginner",
+    "chapter": "Simple Questions and Responses",
+    "sentence": "I am good, thank you!"
+  },
+  {
+    "sentence_id": 15,
+    "sentence_type": "Beginner",
+    "chapter": "Simple Questions and Responses",
+    "sentence": "Where are you from?"
+  },
+  {
+    "sentence_id": 16,
+    "sentence_type": "Beginner",
+    "chapter": "Simple Questions and Responses",
+    "sentence": "I am from New York"
+  }
+]

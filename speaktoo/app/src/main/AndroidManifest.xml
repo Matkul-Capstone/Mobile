@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- User permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,23 +18,19 @@
         android:theme="@style/Theme.Speaktoo"
         tools:targetApi="31">
         <activity
-            android:name=".NavActivity"
+            android:name=".ui.activity.successful.RegisterSuccessfulActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.newusername.NewUsernameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.nav.NavActivity"
             android:exported="false"
-            android:label="@string/title_activity_nav" />
+            android:label="@string/title_activity_nav"
+            android:theme="@style/Theme.Speaktoo" />
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PasswordSuccessful"
-            android:exported="false" />
-        <activity
-            android:name=".ResetPasswordActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.Speaktoo">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,11 +38,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.login.LoginActivity"
+            android:name=".ui.activity.successful.PasswordSuccessful"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.newpassword.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.newpassword.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Speaktoo"/>
+        <activity
+            android:name=".ui.activity.login.LoginActivity"
             android:exported="false"
             android:label="@string/title_activity_login" />
         <activity
-            android:name=".ui.register.RegisterActivity"
+            android:name=".ui.activity.register.RegisterActivity"
             android:exported="false"
             android:label="@string/title_activity_register" />
     </application>

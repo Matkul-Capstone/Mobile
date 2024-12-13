@@ -3,7 +3,7 @@
     <!-- Disabled State -->
     <item android:state_enabled="false">
         <shape android:shape="rectangle">
-            <solid android:color="@color/black" /> <!-- Disabled color -->
+            <solid android:color="#050505" /> <!-- Disabled color -->
             <corners android:radius="250dp" /> <!-- Rounded corners -->\
             <padding android:left="16dp" android:top="8dp" android:right="16dp" android:bottom="8dp" />
         </shape>
@@ -21,7 +21,7 @@
     <!-- Default/Normal State -->
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="@color/black" /> <!-- Default color -->
+            <solid android:color="#050505" /> <!-- Default color -->
             <corners android:radius="250dp" />\
             <padding android:left="16dp" android:top="8dp" android:right="16dp" android:bottom="8dp" />
         </shape>

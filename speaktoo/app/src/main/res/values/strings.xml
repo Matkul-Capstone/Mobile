@@ -10,6 +10,7 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="prompt_username">Username</string>
+    <string name="prompt_new_username">Enter your new username</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="prompt_confirm_password">Confirm Password</string>
@@ -17,6 +18,17 @@
     <string name="action_register">Sign Up</string>
     <string name="action_submit">Submit</string>
     <string name="action_to_log_in">Go to login</string>
+    <string name="action_change_username">Change Username</string>
+    <string name="action_change_password">Change Password</string>
+    <string name="action_log_out">Log Out</string>
+    <string name="action_continue_learning">Continue Learning</string>
+    <string name="text_username">Username :</string>
+    <string name="text_email">Email :</string>
+    <string name="text_score">Score :</string>
+    <string name="text_correct_words">Correct Words :</string>
+    <string name="text_misspelled_words">Misspelled or Missing Words :</string>
+    <string name="record_time_hint">You have 15 seconds to record your spelling</string>
+    <string name="level_up">Time to level up to</string>
 
     <!--levels-->
     <string name="text_level_beginner">Beginner</string>
@@ -39,6 +51,10 @@
     <string name="register_title_text">Create an account</string>
     <string name="register_desc_text">Create a new account</string>
 
+    <!--register successful-->
+    <string name="title_register_successful">Register Successful !</string>
+    <string name="desc_register_successful">Please login to Speaktoo again with your new account</string>
+
     <!--forgot pass page-->
     <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
     <string name="forgot_password_title_text">Forgot Password ?</string>
@@ -55,13 +71,39 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
 
-    <!--bottom_navbar-->
+    <!--new username-->
+    <string name="title_new_username">New Username</string>
+
+    <!--nav-->
     <string name="title_nav_home">Home</string>
     <string name="title_nav_profile">Profile</string>
     <string name="title_nav_milestone">Milestone</string>
+    <string name="title_nav_start_level">StartLevel</string>
 
     <!--home fragment-->
     <string name="title_home_welcome">Welcome,</string>
     <string name="title_home_level">Level</string>
     <string name="text_language_level">Language Level</string>
+
+    <!--questionnaire fragment-->
+    <string name="title_questionnaire">How would you rate your overall English language ability?</string>
+    <string name="text_beginner_questionnaire">Beginner (I am just starting to learn and need a lot of help)</string>
+    <string name="text_intermediate_questionnaire">Intermediate (I understand and speak a little, but still need practice)</string>
+    <string name="text_advance_questionnaire">Advanced (I can speak and understand English well)</string>
+
+    <!--start level fragment-->
+    <string name="text_start_level">Your English Level Is</string>
+    <string name="action_start_learning">Start Learning</string>
+
+    <!--profile fragment-->
+    <string name="title_profile">Profile</string>
+
+    <!--milestone fragment-->
+    <string name="title_milestone">Milestone</string>
+    <string name="text_milestone_progress">Your Progress</string>
+    <string name="text_milestone_history">Practice History</string>
+
+    <!--practice fragment-->
+    <string name="title_feedback">Feedback:</string>
+    <string name="action_generate_feedback">Generate Feedback</string>
 </resources>

@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:background="#E3EFE2"
-    tools:context=".ui.register.RegisterActivity">
+    tools:context=".ui.activity.register.RegisterActivity">
 
     <TextView
         android:id="@+id/register_title_text"
@@ -85,23 +85,25 @@
             android:selectAllOnFocus="true" />
 
         <Button
-            android:id="@+id/register"
+            android:id="@+id/register_button"
             android:layout_width="150dp"
             android:layout_height="48dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="35dp"
             android:layout_marginBottom="20dp"
-            android:background="@drawable/button_green"
+            android:backgroundTint="@color/dark_green"
             android:text="@string/action_register"
             android:textColor="@drawable/text_dark_color" />
-
-        <ProgressBar
-            android:id="@+id/loading"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:visibility="gone" />
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

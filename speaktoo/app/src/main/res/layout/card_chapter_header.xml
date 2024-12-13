@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/chapter_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chapter 1"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#219D57" />
+
+    <TextView
+        android:id="@+id/chapter_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basic Greetings and Introductions"
+        android:textSize="14sp"
+        android:textColor="#666666" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/child_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:nestedScrollingEnabled="false"
+        tools:listitem="@layout/card_chapter_item"/>
+</LinearLayout>

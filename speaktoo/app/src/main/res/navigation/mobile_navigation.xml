@@ -7,19 +7,114 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.speaktoo.ui.home.HomeFragment"
+        android:name="com.example.speaktoo.ui.fragments.home.HomeFragment"
         android:label="@string/title_nav_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_start_level"
+            app:destination="@id/navigation_start_level" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_milestone"
+            app:destination="@id/navigation_milestone" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_questionnaire"
+            app:destination="@id/navigation_questionnaire" />
+        <action
+            android:id="@+id/action_navigation_home_to_levelCompletedFragment"
+            app:destination="@id/navigation_completed_level"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.example.speaktoo.ui.profile.ProfileFragment"
+        android:name="com.example.speaktoo.ui.fragments.profile.ProfileFragment"
         android:label="@string/title_nav_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_milestone"
-        android:name="com.example.speaktoo.ui.milestone.MilestoneFragment"
+        android:name="com.example.speaktoo.ui.fragments.milestone.MilestoneFragment"
         android:label="@string/title_nav_milestone"
-        tools:layout="@layout/fragment_milestone" />
+        tools:layout="@layout/fragment_milestone" >
+        <action
+            android:id="@+id/action_navigation_milestone_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_start_level"
+        android:name="com.example.speaktoo.ui.fragments.startLevel.StartLevelFragment"
+        android:label="@string/title_nav_start_level"
+        tools:layout="@layout/fragment_start_level"  >
+        <action
+            android:id="@+id/action_navigation_start_level_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_start_level_to_levelFragment"
+            app:destination="@id/navigation_chapter" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_chapter"
+        android:name="com.example.speaktoo.ui.fragments.chapter.ChapterFragment"
+        android:label="fragment_level"
+        tools:layout="@layout/fragment_chapter" >
+        <action
+            android:id="@+id/action_navigation_chapter_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_navigation_chapter_to_navigation_practice"
+            app:destination="@id/navigation_practice" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_practice"
+        android:name="com.example.speaktoo.ui.fragments.practice.PracticeFragment"
+        android:label="fragment_practice"
+        tools:layout="@layout/fragment_practice" >
+        <action
+            android:id="@+id/action_navigation_practice_to_navigation_chapter"
+            app:destination="@id/navigation_chapter"
+            app:popUpTo="@id/navigation_chapter"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_questionnaire"
+        android:name="com.example.speaktoo.ui.fragments.questionnaire.QuestionnaireFragment"
+        android:label="fragment_questionnaire"
+        tools:layout="@layout/fragment_questionnaire" >
+        <action
+            android:id="@+id/action_navigation_questionnaire_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_completed_level"
+        android:name="com.example.speaktoo.ui.fragments.levelCompleted.LevelCompletedFragment"
+        android:label="fragment_level_completed"
+        tools:layout="@layout/fragment_level_completed" >
+        <action
+            android:id="@+id/action_navigation_completed_level_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/navigation_home"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_navigation_completed_level_to_navigation_chapter"
+            app:destination="@id/navigation_chapter" />
+    </fragment>
 </navigation>

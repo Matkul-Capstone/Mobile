@@ -1,22 +1,226 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.milestone.MilestoneFragment">
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+    android:background="#E3EFE2"
+    tools:context=".ui.fragments.milestone.MilestoneFragment">
 
+    <!-- Title -->
     <TextView
-        android:id="@+id/text_milestone"
+        android:id="@+id/title_milestone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:text="@string/title_milestone"
         android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Profile Image Container -->
+    <LinearLayout
+        android:id="@+id/image_container"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:background="@drawable/background_circle"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/title_milestone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/background_profile_pic" />
+    </LinearLayout>
+
+    <!-- Username -->
+    <TextView
+        android:id="@+id/text_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@id/image_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Progress Container -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/progress_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_rounded"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@id/text_user_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/text_milestone_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_milestone_progress"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/text_beginner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/text_level_beginner"
+            android:textColor="#228B22"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/text_milestone_progress"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/text_intermediate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/text_level_intermediate"
+            android:textColor="#228B22"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/text_beginner"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/text_advance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/text_level_advance"
+            android:textColor="#228B22"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/text_intermediate"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/score_beginner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="0/1600"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/text_milestone_progress"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/score_intermediate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="0/1600"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/score_beginner"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/score_advance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="0/1600"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/score_intermediate"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- History Container -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/history_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_rounded"
+        android:padding="15dp"
+        app:layout_constraintTop_toBottomOf="@id/progress_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/text_milestone_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_milestone_history"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:id="@+id/text_milestone_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@id/text_milestone_history"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" >
+
+            <TextView
+                android:id="@+id/level_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Level"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#219D57" />
+
+            <TextView
+                android:id="@+id/timestamp_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Timestamp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#219D57" />
+
+            <TextView
+                android:id="@+id/score_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Score"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#219D57" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_history"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:scrollbars="vertical"
+            app:layout_constraintTop_toBottomOf="@id/text_milestone_table"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:listitem="@layout/card_history_item" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
